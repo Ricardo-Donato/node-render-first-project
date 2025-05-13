@@ -17,6 +17,7 @@ app.get('/sugestoes', (req, res) => {
     "Content-Type": "application/json",
     "Access-Control-Allow-Origin": "*",
   });
+  req.body
   let sugestoes = [];
   for (let index = 0; index < 10; index++) {
     sugestoes.push("Item " + index);
